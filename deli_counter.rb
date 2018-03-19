@@ -17,9 +17,8 @@ end
 
 def now_serving(array)
   if array.length == 0
-    queue = "There is nobody waiting to be served!"
+    puts "There is nobody waiting to be served!"
   else
-    queue = "Currently serving #{array.shift}."
+    puts "Currently serving #{array.shift}."
   end
-  puts queue
 end
