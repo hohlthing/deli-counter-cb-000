@@ -14,3 +14,12 @@ def take_a_number(array, string)
   array << string
   puts "Welcome, #{string}. You are number #{array.size} in line."
 end
+
+def now_serving(array)
+  if array.length == 0
+    queue = "There is nobody waiting to be served!"
+  else
+    queue = "Currently serving #{array.shift}"
+  end
+  puts queue
+end
